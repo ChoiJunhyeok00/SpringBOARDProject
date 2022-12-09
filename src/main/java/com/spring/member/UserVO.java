@@ -1,20 +1,17 @@
 package com.spring.member;
 
 public class UserVO {
-    private String username;
+    private String userid;
     private String password;
-    private String role;
-    private String call_num;
-    private String address;
-    public String getUsername() {
-        return username;
+    private String username;
+
+    public String getUserid() {
+        return userid;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
-
-
 
     public String getPassword() {
         return password;
@@ -24,27 +21,12 @@ public class UserVO {
         this.password = password;
     }
 
-    public String getRole() {
-        return role;
+    public String getUsername() {
+        return username;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getCall_num() {
-        return call_num;
-    }
-
-    public void setCall_num(String call_num) {
-        this.call_num = call_num;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }
