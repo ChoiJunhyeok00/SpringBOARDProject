@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 //@RequestMapping(value="/")
 public class BoardController {
-//    public String home(){
-//        return "redirect:list";
-//    }
     @Autowired
     BoardService boardService;
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String home(){
+        return "home";
+    }
 
     @RequestMapping(value = "/board/list", method = RequestMethod.GET)
     public String boardlist(Model model) {
